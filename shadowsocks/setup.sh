@@ -1,6 +1,4 @@
-apt-get install python-pip
 
-pip install shadowsocks
 
 
 cat >/etc/shadowsocks.json <<END
@@ -17,6 +15,10 @@ cat >/etc/shadowsocks.json <<END
 END
 
 apt-get update
+
+apt-get install python-pip
+
+pip install shadowsocks
 
 apt-get install supervisor
 
