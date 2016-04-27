@@ -5,7 +5,7 @@ pip install shadowsocks
 
 cat >/etc/shadowsocks.json <<END
 {
-    "server": "net.hinterstellar.com",
+    "server": "0.0.0.0",
     "port_password": {
         "443" : "mrcd@123"
     },
