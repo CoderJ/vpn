@@ -102,6 +102,10 @@ net.ipv4.tcp_mtu_probing = 1
 net.ipv4.tcp_congestion_control = htcp
 END
 
+cat >/etc/security/limits.conf <<END
+*       -       nofile  65535
+END
+
 sysctl -p
 
 service supervisor start
