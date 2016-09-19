@@ -14,7 +14,7 @@ cat >/etc/shadowsocks.json <<END
 }
 END
 
-
+pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 apt-get install python-m2crypto
 
